@@ -1,8 +1,6 @@
 # Jenkins-AWS
 
 
-Ce référentiel contient la documentation des quatre infrastructures AWS déployées, chacune accompagnée de sa topologie respective. Vous trouverez ci-dessous des informations de base sur chaque infrastructure.
-
 ---
 ### Guide d'Utilisation
 
