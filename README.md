@@ -9,9 +9,14 @@ Ce référentiel contient la documentation des quatre infrastructures AWS déplo
 Les différents fichiers que vous trouvez correspondent chacun à un job dédié dans Jenkins. Le contenu de ces fichiers doit être placé à l'intérieur du job correspondant en utilisant l'option '[Build Step]' avec l'exécution shell.
 
 
+
 ## Choose infra
 
 ### Choix de templates 
+
+Ce job permet de mettre en place une infrastruction selon le template choisit. En sachant que c'est possible d'uitiliser plusieur une template en modifiant le nom de l'infra. 
+## Prérequis
+Il faut strictement avoir deux repertoire infra et templates pour le bon fonctionnement du job, leur chemin n'est pas important c'est à dire ils peuvent se trouver dans different endroit mais il faut le préciser dans le script.
 
 ![choose infra](images/templat-infra.png)
 
@@ -29,6 +34,7 @@ Dans le parametre active choice parameter, il faut cocher Groovy Script et mettr
 ### Suppression d'infrastructure
 
 ![choose infra](images/destruct.png)
+
 
 
 ### Configuration
@@ -54,6 +60,8 @@ NB: Il faut generer depuis le github un token et l'url se trouve sur le github.
 ##  Credential 
 
 ### Automatisation ACCESS Key 
+
+Il met à jour la région et les identifiants pour accèder à AWS CLI.
 
 ![choose infra](images/crendential.png)
 
