@@ -11,7 +11,7 @@ Les différents fichiers que vous trouvez correspondent chacun à un job dédié
 
 ## Choose infra
 
-### Mise en place d'une infrastructure simple
+### Choix de templates 
 
 ![choose infra](images/templat-infra.png)
 
@@ -19,21 +19,21 @@ Les différents fichiers que vous trouvez correspondent chacun à un job dédié
 
 ### Configuration
 
-
+Il faut mettre en place 3 parametres : deux de types string, un de type active choice paramter.
+Dans le parametre active choice parameter, il faut cocher Groovy Script et mettre dans le contenu ce qui se trouve dans le fichier '[ list_of_folder.groovy]'.
 
 ---
 
-## desctruct infra
+## Desctruction infrastructure
 
-### Mise en place d'une infrastructure simple
+### Suppression d'infrastructure
 
 ![choose infra](images/destruct.png)
 
 
-
 ### Configuration
 
-
+Il faut ajouter un seul parametre active choice parameter et il faut cocher Groovy Script et mettre dans le contenu ce qui se trouve dans le fichier '[ list_of_folder.groovy]'.
 
 ---
 
@@ -44,10 +44,10 @@ Les différents fichiers que vous trouvez correspondent chacun à un job dédié
 ![choose infra](images/git.png)
 
 
-
 ### Configuration
 
-
+Il y a deux paramètres de type chaîne de caractères : l'un pour le token et l'autre pour l'URL.
+NB: Il faut generer depuis le github un token et l'url se trouve sur le github.
 
 ---
 
@@ -55,12 +55,15 @@ Les différents fichiers que vous trouvez correspondent chacun à un job dédié
 
 ### Automatisation ACCESS Key 
 
-![choose infra](images/credential.png)
-
+![choose infra](images/crendential.png)
 
 
 ### Configuration
 
+Il y a deux paramètres de type string : l'un c'est pour la region et l'autre pour access_key et access_id.
+
 
 
 ---
+
+ATTENTION!! Toutes les variables dont le nom commence par le symbole $ représentent des noms de paramètres.
